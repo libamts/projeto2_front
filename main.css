@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding-top: 100px;
+    background-color: bisque;
+    
+}
+
+header{
+    /*Itens ao lado um do outro*/
+    display: flex;
+    /*Alinhados verticalmente*/
+    align-items: center;
+    /*Separar cabeçalho do body*/
+    margin-bottom: 10px;
+}
+
+header img{
+    height: 45px;
+    margin-left: 10px;
+    margin-bottom: 8px;
+}
+
+.container{
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+form{
+    /*Itens ao lado um do outro*/
+    display:grid;
+    max-width: 420px;
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+form input, button{
+    /*Tamamanho da fonte*/
+    font-size: 16px;
+    /*Cor de fundo*/
+    background-color: #fff;
+    /*Tirando todas as bordas*/
+    border: none;
+    /*Colocando a borda inferior, tamanhode 2px, tipo solida e cor #000*/
+    border: 2px solid #000;
+    /*Espaçamento entre o inputs*/
+    padding: 6px;
+    /*Espaçamento entre o inputs*/
+    margin: 1px;
+}
+
+table{
+    /*Ocupação da tabela*/
+    max-width: 100%;
+}
+
+table td{
+    /*Alinhar os textos das colunas verticalmente, titulo coluna e os valores*/
+    text-align: center;
+    /*Tamanho da fonte*/
+    font-size: 18px;
+    /*Espaçamento em relação a borda inferior do cabeçalho*/
+    padding: 16px 0;
+    /*Margem inferior das linhas*/
+    border-bottom: 2px solid rgba(0,0,0,0.5);
+}
+
+table th{
+    /*Tamanho da fonte*/
+    font-size: 24px;
+    /*Colocando a borda inferior, tamanhode 2px, tipo solida e cor #000*/
+    border-bottom: 2px solid #000;
+    /*Espaçamento geral*/
+    padding: 16px;
+    /*Tamanho da fonte*/
+    font-weight: 24px;
+}
+
+.span-numero{
+    margin: 8px;
+    display: none;
+    color: red;
+    font-size: 15px;
+}
+
+input.error{
+    color: red;
+    border-color: red;
+    outline-color: red;
+}
+
